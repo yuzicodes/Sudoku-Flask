@@ -40,7 +40,7 @@ hr {
     text-align: center;
     border: 1px solid black;
     border-color: rgb(173, 122, 26);
-    float: left;
+    float: inline-start;
     background-color: rgb(44, 40, 40);
 
 }
