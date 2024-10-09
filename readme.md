@@ -12,7 +12,7 @@ A web-based Sudoku game built using **Flask**! This project offers a simple yet 
 - **Responsive Design**: Optimized for both desktop and mobile.
 
 ## Demo 🚀
-Check out the live demo here: [Sudoku-Flask on Vercel](https://your-vercel-link.com)
+Check out the live demo here: [Sudoku-Flask on Vercel](https://sudoku-flask.vercel.app/)
 
 ![Sudoku Game Screenshot](https://your-image-link.com/sudoku-screenshot.png)
 
