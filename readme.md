@@ -2,19 +2,19 @@
 
 A web-based Sudoku game built using **Flask**! This project offers a simple yet engaging way to play and solve Sudoku puzzles directly in your browser. The app is deployed on **Vercel** for easy access.
 
-![Sudoku Preview](https://your-image-link.com/sudoku-preview.png)
+![Sudoku Preview](./preview/preview.jpeg)
 
 ## Features ✨
 - **Play Sudoku**: Solve puzzles in a sleek and user-friendly interface.
 - **Generate Puzzles**: Get new, random Sudoku puzzles with varying levels of difficulty.
-- **Instant Feedback**: The system checks your solution in real-time.
+- **Solve Puzzle**: Enter a Sudoku puzzle and click "Solve" to get the solution.
 - **Flask Framework**: Built using the Flask micro-framework.
 - **Responsive Design**: Optimized for both desktop and mobile.
 
 ## Demo 🚀
 Check out the live demo here: [Sudoku-Flask on Vercel](https://sudoku-flask.vercel.app/)
 
-![Sudoku Game Screenshot](https://your-image-link.com/sudoku-screenshot.png)
+![Sudoku Game Screenshot](./preview/generated.jpeg)
 
 ## Installation 🛠
 
