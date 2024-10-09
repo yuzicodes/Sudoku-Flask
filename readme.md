@@ -2,7 +2,7 @@
 
 A web-based Sudoku game built using **Flask**! This project offers a simple yet engaging way to play and solve Sudoku puzzles directly in your browser. The app is deployed on **Vercel** for easy access.
 
-<p align="left">
+<p align="center">
   <img src="./preview/preview.jpeg" alt="Sudoku Preview" width="300" />
 </p>
 
