@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudoku Solver</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' type='image/x-icon' href='../static/images/favicon.ico'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/main.css'>
+</head>
+<body>
+        <div class="background"></div>
+        <h1>Sudoku Solver</h1>
+        <center>
+        <br>
+        <div class="pad">
+            <div class="box">
+                <input class="grid top-left-corner" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid top-right-corner" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid right bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid right bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid right bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid right bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <input class="grid bottom" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <br>
+                <input class="grid bottom-left-corner" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid right" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid" maxlength="1" autocomplete="off">
+                <input class="grid bottom-right-corner" maxlength="1" autocomplete="off">
+
+            </div>
+        </div>
+    
+    <div>
+    <h6>Click <font color="#d8e27">Generate</font> to generate a new Sudoku or enter your own Sudoku</h3>
+    </div>
+    <br>
+    <div class="button">
+        <input type="button" id="generate" value="Generate">
+        <input type="button" id="reset" value="Reset">
+        <input type="button" id="solve" value="Solve">
+    </div>
+        <p id="message">&nbsp;</p>
+        <hr>
+        <div class="credits">
+            <h2>@yuzicodes</h2>
+            <p><b>[ Made By Aalim Sheikh ]</b></p>
+            <div class="links">
+            <p><a href="https://github.com/yuzicodes" target="_blank"><img id="github" src="../static/images/github.png" height="23px"></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://x.com/yuzicodes" target="_blank"><img id="twitter" src="../static/images/twitter.png" height="23px"></a></p>
+            </div>
+        </div>
+    </center>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../static/main.js"></script>
+</body>
+</html>
